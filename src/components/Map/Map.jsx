@@ -33,7 +33,7 @@ const Map = ( { setCoordinates, setBounds, coordinates, places, setChildClicked,
                     lat={Number(place.latitude)}
                     lng={Number(place.langitude)}
                     key={i}
-                    onChildClick={(key) => setChildClicked(key)}
+                    onClick={() => setChildClicked(key)}
                  >
                    {
                      !isDesktop ? (
